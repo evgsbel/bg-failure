@@ -29,6 +29,35 @@ p
   font-size: 35px
   line-height: 42px
   margin-bottom: 22px
+.slider-arrow
+  width: 47px
+  height: 47px
+  background: #FFFFFF
+  border: 2px solid #006298
+  box-sizing: border-box
+  -webkit-border-radius: 50%
+  -moz-border-radius: 50%
+  border-radius: 50%
+  transition: background-color 0.3s ease-in-out
+  position: absolute
+  &:focus
+    outline: none
+    border: 2px solid #006298
+  svg
+    stroke: #006298
+    transition: color 0.3s ease-in-out
+  &:hover
+    background-color: #006298
+  &:hover svg
+    stroke: #fff
+  &_prev
+    left: -50px
+  &_next
+    right: -50px
+  &__wrapper
+    position: absolute
+    top: 50%
+    width: 100%
 
 // help
 .f-help
@@ -153,20 +182,16 @@ p
   margin-top: 80px
   margin-bottom: 50px
   &__item
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
-    -webkit-border-radius: 3px
+    border: 1px solid rgba(0,0,0,0.25)
     -moz-border-radius: 3px
     border-radius: 3px
     box-sizing: border-box
     padding: 30px 30px 60px 30px
-    margin-right: 30px
-    max-width: 48%
     position: relative
     transition: box-shadow 0.3s ease-in-out
+    width: 100%
     &:hover
-      box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1)
-    &:last-child
-      margin-right: 0
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
   &__title
     font-family: $bold
     font-size: 30px
@@ -202,3 +227,55 @@ p
     bottom: 30px
     text-decoration: underline
 // case END
+// feedback
+.feedback
+  background: #006198
+  padding: 60px 0 40px
+  color: #fff
+  .title
+    color: #fff
+    margin-bottom: 50px
+  &__submit
+    text-align: center
+    width: 100%
+  &__button
+    background: #fff
+    font-family: $bold
+    height: 52px
+    -webkit-border-radius: 3px
+    -moz-border-radius: 3px
+    border-radius: 3px
+    display: flex
+    justify-content: center
+    align-items: center
+    border: 0
+    margin: 30px auto 0
+    width: calc(33.3% - 30px)
+    padding-left: 15px
+    padding-right: 15px
+    font-size: 18px
+
+.form-group
+  input
+    height: 52px
+    -webkit-border-radius: 3px
+    -moz-border-radius: 3px
+    border-radius: 3px
+    border: 2px solid #fff
+    background-color: transparent
+    &:focus
+      background-color: transparent
+    &::placeholder
+      color: #fff
+      font-family: $bold
+      bg
+.confidencial
+  text-align: center
+  margin-top: 40px
+  &__link
+    color: #fff
+    text-decoration: underline
+    &:hover
+      color: #fff
+      text-decoration: none
+// feedback END
