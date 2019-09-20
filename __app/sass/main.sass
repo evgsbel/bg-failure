@@ -1,0 +1,204 @@
+@import "font"
+$regular:  "Webnar-regular"
+$bold:  "Webnar-bold"
+body
+  color: #464646
+  letter-spacing: 0.05em
+  font-size: 16px
+  font-family: $regular
+b, .bold
+  font-family: $bold
+.n-wr
+  white-space: nowrap
+ul, ol
+  list-style: none
+  margin: 0
+  padding: 0
+img
+  max-width: 100%
+p
+  margin: 0
+.container
+  width: 1160px
+.t-center
+  text-align: center
+.hide-svg
+  display: none
+.title
+  color: #000
+  font-size: 35px
+  line-height: 42px
+  margin-bottom: 22px
+
+// help
+.f-help
+  background: #D0D0D0
+  padding-top: 50px
+  color: #333
+  p
+    font-size: 20px
+    line-height: 25px
+    &:last-child, .bold
+      padding-bottom: 35px
+// help END
+
+// types
+.f-type
+  padding: 70px 0
+  &__title
+    width: 100%
+    padding: 26px 0
+    margin-bottom: 25px
+    background: #EEEEEE
+    -webkit-border-radius: 3px
+    -moz-border-radius: 3px
+    border-radius: 3px
+    text-transform: uppercase
+    text-align: center
+    font-size: 18px
+    line-height: 22px
+    font-family: $bold
+  &__content
+    padding: 0 20px 20px 30px
+    box-sizing: border-box
+    background: #F8F9F9
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25)
+    border-radius: 3px
+  p
+    font-size: 18px
+    line-height: 22px
+    margin-bottom: 25px
+  &__hand
+    background: #006198
+    -webkit-border-radius: 3px
+    -moz-border-radius: 3px
+    border-radius: 3px
+    color: #fff
+    margin-top: 55px
+    font-size: 20px
+    line-height: 30px
+    padding: 40px 50px 60px
+    &_img
+      margin-right: 20px
+.blue-list
+  margin-bottom: 30px
+  list-style-type: none
+  counter-reset: blue-counter
+  &__item
+    font-size: 16px
+    font-family: $regular
+    color: #464646
+    line-height: 22px
+    margin-bottom: 22px
+    padding-left: 30px
+    position: relative
+    &:before
+      content: counter(blue-counter)
+      counter-increment: blue-counter
+      font-size: 18px
+      line-height: 22px
+      color: #006298
+      font-family: $bold
+      position: absolute
+      left: 0
+// types END
+
+// not do
+.f-notdo
+  background: url("../img/notdo_bg.jpg") no-repeat
+  padding: 50px 0 70px
+  & .title
+    margin-bottom: 50px
+  &__img
+    width: 70px
+    height: 70px
+    background: #016299
+    -webkit-border-radius: 50%
+    -moz-border-radius: 50%
+    border-radius: 50%
+    margin-bottom: 16px
+  &__text
+    line-height: 22px
+// not do END
+
+//recommends
+.f-recommend
+  margin-top: 55px
+  margin-bottom: 65px
+  .title
+    margin-bottom: 35px
+.color-list
+  &__item
+    margin-bottom: 35px
+    line-height: 22px
+    position: relative
+    padding-left: 40px
+    letter-spacing: 0
+    &:before
+      content: ''
+      background: #006298
+      width: 10px
+      height: 10px
+      -webkit-border-radius: 50%
+      -moz-border-radius: 50%
+      border-radius: 50%
+      display: flex
+      align-items: center
+      position: absolute
+      left: 0
+      top: 5px
+//recommends END
+// case
+.f-case
+  margin-top: 80px
+  margin-bottom: 50px
+  &__item
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    -webkit-border-radius: 3px
+    -moz-border-radius: 3px
+    border-radius: 3px
+    box-sizing: border-box
+    padding: 30px 30px 60px 30px
+    margin-right: 30px
+    max-width: 48%
+    position: relative
+    transition: box-shadow 0.3s ease-in-out
+    &:hover
+      box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1)
+    &:last-child
+      margin-right: 0
+  &__title
+    font-family: $bold
+    font-size: 30px
+    line-height: 35px
+    color: #006298
+    margin-bottom: 30px
+  p
+    margin-bottom: 15px
+  &__numbers
+    font-size: 20px
+    border-top: 1px solid rgba(0, 0, 0, 0.2)
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+    padding: 15px 0 0
+    margin-bottom: 15px
+    span
+      font-family: $bold
+      font-size: 28px
+    &_orange  span
+      color: #e19c00
+    &_blue span
+      color: #006298
+  &__profit-title
+    color: #333
+    font-size: 30px
+    line-height: 35px
+    font-family: $bold
+    margin-bottom: 15px
+  &__link
+    color: #016299
+    font-size: 20px
+    line-height: 35px
+    position: absolute
+    bottom: 30px
+    text-decoration: underline
+// case END
