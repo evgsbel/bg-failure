@@ -228,7 +228,7 @@ p
     text-decoration: underline
 // case END
 // feedback
-.feedback
+.f-feedback
   background: #006198
   padding: 60px 0 40px
   color: #fff
@@ -279,3 +279,42 @@ p
       color: #fff
       text-decoration: none
 // feedback END
+
+// contacts
+.f-contact
+  background: #F2F2F2
+  padding: 60px 0
+  &__nav
+    border: 0
+    margin-top: 30px
+  &__nav-item
+    margin-right: 30px
+  &__nav-link
+    text-transform: uppercase
+    font-family: $bold
+    background-color: #fff
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2)
+    transition: all 0.3s ease-in-out
+    border-radius: 5px !important
+    border: 0 !important
+    color: #000
+    font-size: 22px
+    line-height: 1
+    padding: 23px 20px
+    text-align: center
+    &.active, &:hover
+      background-color: #006298 !important
+      color: #fff !important
+      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2)
+  &__tab
+    margin-top: 40px
+  &__tab-wrapper
+    margin-bottom: 30px
+  &__office
+    color: #016299
+    font-size: 20px
+    text-decoration: underline
+  &__adress
+    color: #000
+    font-size: 20px
+// contacts END
