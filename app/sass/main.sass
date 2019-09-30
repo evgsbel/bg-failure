@@ -102,6 +102,10 @@ p
     line-height: 22px
     margin-bottom: 25px
   &__hand
+<<<<<<< HEAD
+=======
+    background: url("../img/blur.png") no-repeat center #006198
+>>>>>>> 7608f97a460f6cbf1b2b4eeb0a9a36fef04dc7ed
     -webkit-border-radius: 3px
     -moz-border-radius: 3px
     border-radius: 3px
@@ -141,6 +145,7 @@ p
   padding: 50px 0 70px
   & .title
     margin-bottom: 50px
+
   &__img
     width: 70px
     height: 70px
@@ -230,8 +235,48 @@ p
     bottom: 30px
     text-decoration: underline
 // case END
+
+// reviews
+.f-reviews
+  margin: 50px 0
+  &__item
+    -webkit-border-radius: 3px
+    -moz-border-radius: 3px
+    border-radius: 3px
+    background: #ffffff
+    padding: 22px 17px 10px 30px
+    box-sizing: border-box
+    border: 1px solid rgba(0, 0, 0, 0.25)
+  &__title
+    font-family: $bold
+    font-size: 30px
+    line-height: 47px
+    color: #333
+    margin-bottom: 10px
+  &__subtitle
+    font-size: 20px
+    line-height: 25px
+    color: #333
+    margin-bottom: 20px
+  &__text
+    font-size: 18px
+    line-height: 22px
+    color: #1a1a1a
+  &__link
+    margin-top: 20px
+    display: block
+    text-align: right
+    text-decoration: underline
+    color: #006298
+    font-size: 18px
+    line-height: 22px
+// reviews END
 // feedback
 .f-feedback
+<<<<<<< HEAD
+=======
+  background: url("../img/blur.png") no-repeat center #006198
+>>>>>>> 7608f97a460f6cbf1b2b4eeb0a9a36fef04dc7ed
   padding: 60px 0 40px
   color: #fff
   .title
@@ -312,6 +357,18 @@ p
     margin-top: 40px
   &__tab-wrapper
     margin-bottom: 30px
+    position: relative
+    padding-left: 40px
+    &:before
+      content: ''
+      width: 17px
+      height: 20px
+      background-image: url("data:image/svg+xml,%3Csvg%20width=%2217%22%20height=%2220%22%20viewBox=%220%200%2017%2020%22%20fill=%22none%22%20xmlns=%22http://www.w3.org/2000/svg%22%3E%20%3Cpath%20fill-rule=%22evenodd%22%20clip-rule=%22evenodd%22%20d=%22M8.5%201.66668C6.69653%201.66668%204.96692%202.36906%203.69167%203.61932C2.41643%204.86957%201.7%206.56527%201.7%208.3334C1.7%2010.9151%203.41338%2013.4203%205.29206%2015.3645C6.21402%2016.3186%207.13887%2017.0997%207.83418%2017.6425C8.09295%2017.8445%208.31897%2018.0128%208.5%2018.144C8.68103%2018.0128%208.90705%2017.8445%209.16582%2017.6425C9.86113%2017.0997%2010.786%2016.3186%2011.7079%2015.3645C13.5866%2013.4203%2015.3%2010.9151%2015.3%208.3334C15.3%206.56527%2014.5836%204.86957%2013.3083%203.61932C12.0331%202.36906%2010.3035%201.66668%208.5%201.66668ZM8.5%2019.1668C8.02851%2019.8602%208.02829%2019.8601%208.02804%2019.8599L8.02562%2019.8583L8.01995%2019.8546L8.00047%2019.8417C7.98392%2019.8306%207.96031%2019.8148%207.93012%2019.7943C7.86975%2019.7533%207.78299%2019.6936%207.67362%2019.6161C7.45496%2019.4613%207.14541%2019.2353%206.7752%2018.9463C6.03613%2018.3693%205.04848%2017.5358%204.05794%2016.5107C2.11162%2014.4966%200%2011.585%200%208.3334C5.06639e-08%206.12324%200.895533%204.00361%202.48959%202.4408C4.08365%200.87798%206.24566%200%208.5%200C10.7543%200%2012.9163%200.87798%2014.5104%202.4408C16.1045%204.00361%2017%206.12324%2017%208.3334C17%2011.585%2014.8884%2014.4966%2012.9421%2016.5107C11.9515%2017.5358%2010.9639%2018.3693%2010.2248%2018.9463C9.85459%2019.2353%209.54504%2019.4613%209.32638%2019.6161C9.21701%2019.6936%209.13025%2019.7533%209.06988%2019.7943C9.03969%2019.8148%209.01608%2019.8306%208.99953%2019.8417L8.98005%2019.8546L8.97439%2019.8583L8.97259%2019.8595C8.97235%2019.8596%208.9715%2019.8602%208.5%2019.1668ZM8.5%2019.1668L8.9715%2019.8602C8.68598%2020.0468%208.31356%2020.0465%208.02804%2019.8599L8.5%2019.1668Z%22%20fill=%22black%22/%3E%20%3Cpath%20fill-rule=%22evenodd%22%20clip-rule=%22evenodd%22%20d=%22M8.5%206.66672C7.56112%206.66672%206.8%207.41291%206.8%208.3334C6.8%209.25388%207.56112%2010.0001%208.5%2010.0001C9.43888%2010.0001%2010.2%209.25388%2010.2%208.3334C10.2%207.41291%209.43888%206.66672%208.5%206.66672ZM5.1%208.3334C5.1%206.49243%206.62223%205.00004%208.5%205.00004C10.3778%205.00004%2011.9%206.49243%2011.9%208.3334C11.9%2010.1744%2010.3778%2011.6668%208.5%2011.6668C6.62223%2011.6668%205.1%2010.1744%205.1%208.3334Z%22%20fill=%22black%22/%3E%20%3C/svg%3E")
+      background-repeat: no-repeat
+      display: block
+      position: absolute
+      left: 15px
+      top: 5px
   &__office
     color: #016299
     font-size: 20px
@@ -320,3 +377,31 @@ p
     color: #000
     font-size: 20px
 // contacts END
+
+// f-footer
+.f-footer
+  background: url("../img/blur.png") no-repeat center #006198
+  padding: 60px 0
+  color: #fff
+  .f-footer-nav
+    &__title
+      text-transform: uppercase
+      font-family: $bold
+      height: 50px
+    &__item
+      a
+        color: #fff
+        font-size: 15px
+        line-height: 18px
+        text-decoration: underline
+      a:hover
+        text-decoration: none
+  &__copy
+    margin-top: 55px
+  &__logo
+    border-right: 2px solid #fff
+    text-align: right
+  &__organisation
+    font-size: 15px
+    line-height: 18px
+// f-footer END

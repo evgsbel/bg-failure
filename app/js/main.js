@@ -17,3 +17,23 @@ $('.case-slider-js').owlCarousel({
         }
     }
 });
+$('.f-reviews-slider-js').owlCarousel({
+    loop:true,
+    dots: false,
+    nav:true,
+    navText: [arrow_left, arrow_right],
+    navClass: ["slider-arrow slider-arrow_prev", "slider-arrow slider-arrow_next"],
+    navContainerClass: 'slider-arrow__wrapper',
+    margin: 30,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+});
