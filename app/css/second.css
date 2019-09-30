@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "Webnar-regular";
+  src: url("../fonts/WEBNAR-REGULAR.OTF"), url("../fonts/Webnar-Regular.ttf"), url("../fonts/Webnar-Regular.eot"), url("../fonts/Webnar-Regular.woff"), url("../fonts/Webnar-Regular.svg"); }
+
+@font-face {
+  font-family: "Webnar-italic";
+  font-style: italic;
+  src: url("../fonts/WEBNAR-REGULARITALIC.OTF"), url("../fonts/Webnar-RegularItalic.ttf"), url("../fonts/Webnar-RegularItalic.eot"), url("../fonts/Webnar-RegularItalic.woff"), url("../fonts/Webnar-RegularItalic.svg"); }
+
+@font-face {
+  font-family: "Webnar-bold";
+  font-weight: bold;
+  src: url("../fonts/WEBNAR-BOLD.OTF"), url("../fonts/Webnar-Bold.ttf"), url("../fonts/Webnar-Bold.eot"), url("../fonts/Webnar-Bold.woff"), url("../fonts/Webnar-Bold.svg"); }
+
+@font-face {
+  font-family: "Webnar-bold_italic";
+  font-weight: bold;
+  font-style: italic;
+  src: url("../fonts/WEBNAR-BOLDITALIC.OTF"), url("../fonts/Webnar-BoldItalic.ttf"), url("../fonts/Webnar-BoldItalic.eot"), url("../fonts/Webnar-BoldItalic.woff"), url("../fonts/Webnar-BoldItalic.svg"); }
+
+@font-face {
+  font-family: "Webnar-thin";
+  font-weight: 100;
+  src: url("../fonts/WEBNAR-THIN.OTF"), url("../fonts/Webnar-Thin.ttf"), url("../fonts/Webnar-Thin.eot"), url("../fonts/Webnar-Thin.woff"), url("../fonts/Webnar-Thin.svg"); }
+
+body {
+  color: #464646;
+  letter-spacing: 0.05em;
+  font-size: 16px;
+  font-family: "Webnar-regular"; }
+
+b, .bold {
+  font-family: "Webnar-bold"; }
+
+.n-wr {
+  white-space: nowrap; }
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+img {
+  max-width: 100%; }
+
+p {
+  margin: 0; }
+
+.container {
+  width: 1160px; }
+
+.t-center {
+  text-align: center; }
+
+.hide-svg {
+  display: none; }
+
+.blur {
+  background: url(../img/blur.png) no-repeat top center #006198; }
+
+.title {
+  color: #036194;
+  font-size: 35px;
+  line-height: 42px;
+  margin-bottom: 22px; }
+
+.slider-arrow {
+  width: 47px;
+  height: 47px;
+  background: #FFFFFF;
+  border: 2px solid #006298;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50%;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  position: absolute; }
+  .slider-arrow:focus {
+    outline: none;
+    border: 2px solid #006298; }
+  .slider-arrow svg {
+    stroke: #006298;
+    -webkit-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out; }
+  .slider-arrow:hover {
+    background-color: #006298; }
+  .slider-arrow:hover svg {
+    stroke: #fff; }
+  .slider-arrow_prev {
+    left: -50px; }
+  .slider-arrow_next {
+    right: -50px; }
+  .slider-arrow__wrapper {
+    position: absolute;
+    top: 50%;
+    width: 100%; }
