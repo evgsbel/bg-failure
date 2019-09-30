@@ -1,0 +1,62 @@
+@import "font"
+$regular:  "Webnar-regular"
+$bold:  "Webnar-bold"
+body
+  color: #464646
+  letter-spacing: 0.05em
+  font-size: 16px
+  font-family: $regular
+b, .bold
+  font-family: $bold
+.n-wr
+  white-space: nowrap
+ul, ol
+  list-style: none
+  margin: 0
+  padding: 0
+img
+  max-width: 100%
+p
+  margin: 0
+.container
+  width: 1160px
+.t-center
+  text-align: center
+.hide-svg
+  display: none
+.blur
+  background: url(../img/blur.png) no-repeat top center #006198
+.title
+  color: #036194
+  font-size: 35px
+  line-height: 42px
+  margin-bottom: 22px
+.slider-arrow
+  width: 47px
+  height: 47px
+  background: #FFFFFF
+  border: 2px solid #006298
+  box-sizing: border-box
+  -webkit-border-radius: 50%
+  -moz-border-radius: 50%
+  border-radius: 50%
+  transition: background-color 0.3s ease-in-out
+  position: absolute
+  &:focus
+    outline: none
+    border: 2px solid #006298
+  svg
+    stroke: #006298
+    transition: color 0.3s ease-in-out
+  &:hover
+    background-color: #006298
+  &:hover svg
+    stroke: #fff
+  &_prev
+    left: -50px
+  &_next
+    right: -50px
+  &__wrapper
+    position: absolute
+    top: 50%
+    width: 100%

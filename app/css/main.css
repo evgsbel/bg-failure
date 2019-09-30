@@ -55,8 +55,11 @@ p {
 .hide-svg {
   display: none; }
 
+.blur {
+  background: url(../img/blur.png) no-repeat top center #006198; }
+
 .title {
-  color: #000;
+  color: #036194;
   font-size: 35px;
   line-height: 42px;
   margin-bottom: 22px; }
@@ -98,6 +101,8 @@ p {
   background: #D0D0D0;
   padding-top: 50px;
   color: #333; }
+  .f-help .title {
+    color: #000; }
   .f-help p {
     font-size: 20px;
     line-height: 25px; }
@@ -130,7 +135,6 @@ p {
     line-height: 22px;
     margin-bottom: 25px; }
   .f-type__hand {
-    background: #006198;
     border-radius: 3px;
     color: #fff;
     margin-top: 55px;
@@ -260,17 +264,16 @@ p {
     bottom: 30px;
     text-decoration: underline; }
 
-.feedback {
-  background: #006198;
+.f-feedback {
   padding: 60px 0 40px;
   color: #fff; }
-  .feedback .title {
+  .f-feedback .title {
     color: #fff;
     margin-bottom: 50px; }
-  .feedback__submit {
+  .f-feedback__submit {
     text-align: center;
     width: 100%; }
-  .feedback__button {
+  .f-feedback__button {
     background: #fff;
     font-family: "Webnar-bold";
     height: 52px;
@@ -327,3 +330,44 @@ p {
     .confidencial__link:hover {
       color: #fff;
       text-decoration: none; }
+
+.f-contact {
+  background: #F2F2F2;
+  padding: 60px 0; }
+  .f-contact__nav {
+    border: 0;
+    margin-top: 30px; }
+  .f-contact__nav-item {
+    margin-right: 30px; }
+  .f-contact__nav-link {
+    text-transform: uppercase;
+    font-family: "Webnar-bold";
+    background-color: #fff;
+    -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px !important;
+    border: 0 !important;
+    color: #000;
+    font-size: 22px;
+    line-height: 1;
+    padding: 23px 20px;
+    text-align: center; }
+    .f-contact__nav-link.active, .f-contact__nav-link:hover {
+      background-color: #006298 !important;
+      color: #fff !important;
+      -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+              box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2); }
+  .f-contact__tab {
+    margin-top: 40px; }
+  .f-contact__tab-wrapper {
+    margin-bottom: 30px; }
+  .f-contact__office {
+    color: #016299;
+    font-size: 20px;
+    text-decoration: underline; }
+  .f-contact__adress {
+    color: #000;
+    font-size: 20px; }
