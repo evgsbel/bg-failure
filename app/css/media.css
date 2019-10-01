@@ -4,14 +4,11 @@
   .slider-arrow_prev {
     left: 0; }
   .slider-arrow_next {
-<<<<<<< HEAD
     right: 0; } }
 
 @media (max-width: 480px) {
   .f-contact__nav-link {
-    margin-bottom: 15px; } }
-=======
-    right: 0; }
+    margin-bottom: 15px; }
   .f-notdo__item {
     margin-bottom: 15px; }
   .f-footer, .f-feedback, .f-type__hand {
@@ -41,4 +38,3 @@
     border: 0; }
   .f-footer__copy {
     margin-top: 0; } }
->>>>>>> 31b0bfdc38dd70d86aa6a401b46b2c6c4da2f10a
