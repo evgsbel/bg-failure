@@ -135,10 +135,7 @@ p {
     line-height: 22px;
     margin-bottom: 25px; }
   .f-type__hand {
-<<<<<<< HEAD
-=======
     background: url("../img/blur.png") no-repeat center #006198;
->>>>>>> 7608f97a460f6cbf1b2b4eeb0a9a36fef04dc7ed
     border-radius: 3px;
     color: #fff;
     margin-top: 55px;
@@ -268,9 +265,9 @@ p {
     bottom: 30px;
     text-decoration: underline; }
 
-<<<<<<< HEAD
 .f-feedback {
-=======
+  background: #006198; }
+
 .f-reviews {
   margin: 50px 0; }
   .f-reviews__item {
@@ -306,7 +303,6 @@ p {
 
 .f-feedback {
   background: url("../img/blur.png") no-repeat center #006198;
->>>>>>> 7608f97a460f6cbf1b2b4eeb0a9a36fef04dc7ed
   padding: 60px 0 40px;
   color: #fff; }
   .f-feedback .title {
@@ -405,9 +401,6 @@ p {
   .f-contact__tab {
     margin-top: 40px; }
   .f-contact__tab-wrapper {
-<<<<<<< HEAD
-    margin-bottom: 30px; }
-=======
     margin-bottom: 30px;
     position: relative;
     padding-left: 40px; }
@@ -421,7 +414,6 @@ p {
       position: absolute;
       left: 15px;
       top: 5px; }
->>>>>>> 7608f97a460f6cbf1b2b4eeb0a9a36fef04dc7ed
   .f-contact__office {
     color: #016299;
     font-size: 20px;
@@ -429,8 +421,6 @@ p {
   .f-contact__adress {
     color: #000;
     font-size: 20px; }
-<<<<<<< HEAD
-=======
 
 .f-footer {
   background: url("../img/blur.png") no-repeat center #006198;
@@ -455,4 +445,3 @@ p {
   .f-footer__organisation {
     font-size: 15px;
     line-height: 18px; }
->>>>>>> 7608f97a460f6cbf1b2b4eeb0a9a36fef04dc7ed
