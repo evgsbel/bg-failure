@@ -16,8 +16,6 @@ $('.case-slider-js').owlCarousel({
             items:2
         }
     }
-<<<<<<< HEAD
-=======
 });
 $('.f-reviews-slider-js').owlCarousel({
     loop:true,
@@ -38,5 +36,4 @@ $('.f-reviews-slider-js').owlCarousel({
             items:3
         }
     }
->>>>>>> 31b0bfdc38dd70d86aa6a401b46b2c6c4da2f10a
 });
