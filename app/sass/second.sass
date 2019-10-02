@@ -1,62 +1,156 @@
-@import "font"
 $regular:  "Webnar-regular"
 $bold:  "Webnar-bold"
-body
-  color: #464646
-  letter-spacing: 0.05em
-  font-size: 16px
-  font-family: $regular
-b, .bold
-  font-family: $bold
-.n-wr
-  white-space: nowrap
-ul, ol
-  list-style: none
-  margin: 0
-  padding: 0
-img
-  max-width: 100%
-p
-  margin: 0
-.container
-  width: 1160px
-.t-center
+.blur_grey
+  background: url("../img/blur-grey.png") no-repeat center -100px #D0D0D0
+.color_white
+  color: #fff
+.title_margin
+  margin-bottom: 50px
+// cost
+.f-cost
+  padding: 60px 0
+  .title
+    margin-bottom: 45px
+  &__item
+    margin-bottom: 30px
+  &__input, &__select
+    border: 2px solid #4F4F4F
+    -webkit-border-radius: 5px
+    -moz-border-radius: 5px
+    border-radius: 5px
+    font-size: 18px
+    color: #333
+    height: 52px
+    line-height: 22px
+    background-color: transparent
+    &:focus
+      border: 2px solid #036194
+      background-color: transparent
+      color: #333
+      box-shadow: none
+      box-shadow: 1px 1px 1px 1px rgba(79, 79, 79, 0.25)
+    &::placeholder
+      color: #333
+  &__select
+    background: url("data:image/svg+xml,%3Csvg width='14' height='9' viewBox='0 0 14 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.47266 1.84863L6.80469 7.17871L12.1348 1.84863' stroke='%234F4F4F' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat 95% center
+    transition: background .3s
+    &:focus, &:active
+      background: url("data:image/svg+xml,%3Csvg width='14' height='9' viewBox='0 0 14 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.0078 7.17871L6.67578 1.84863L1.3457 7.17871' stroke='%234F4F4F' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat 95% center
+  &__submit
+    height: 52px
+    font-family: $bold
+    font-size: 18px
+    line-height: 22px
+    color: #2f2f2f
+    transition: background-color color .3s ease-in-out
+    &:hover
+      background-color: #036194
+      color: #fff
+  &__item_btn
+    margin: 0 auto
+  &__confidecial
+    font-size: 16px
+    line-height: 25px
+    text-align: center
+    color: #333
+    margin-top: 30px
+    span
+      font-family: $bold
+    a
+      text-decoration: underline
+      color: #333
+// cost END
+
+// f-scheme
+.f-scheme
+  padding: 60px 0
+  .title
+    margin-bottom: 50px
+  &__item
+    background: #F8F9F9
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25)
+    border-radius: 3px
+    margin-bottom: 30px
+  &__top
+    background: #EEEEEE
+    color: #006298
+    font-family: $bold
+    padding: 15px 0
+    height: 60px
+  &__bottom
+    color: #464646
+    padding: 10px 15px 35px 15px
+    height: 105px
+    text-align: center
+.blue-hand
+  color: #fff
+  padding: 30px 0
+  margin: 45px 0
+  &__text
+    flex-direction: column
+    &_bold
+      font-family: $bold
+      font-size: 20px
+      line-height: 30px
+// f-scheme END
+
+//qualification
+.f-qualification
+  padding: 60px 0
+  background: #006198
   text-align: center
-.hide-svg
-  display: none
-.blur
-  background: url(../img/blur.png) no-repeat top center #006198
-.title
-  color: #036194
-  font-size: 35px
-  line-height: 42px
-  margin-bottom: 22px
-.slider-arrow
-  width: 47px
-  height: 47px
-  background: #FFFFFF
-  border: 2px solid #006298
-  box-sizing: border-box
-  -webkit-border-radius: 50%
-  -moz-border-radius: 50%
-  border-radius: 50%
-  transition: background-color 0.3s ease-in-out
-  position: absolute
-  &:focus
-    outline: none
-    border: 2px solid #006298
-  svg
-    stroke: #006298
-    transition: color 0.3s ease-in-out
-  &:hover
-    background-color: #006298
-  &:hover svg
-    stroke: #fff
-  &_prev
-    left: -50px
-  &_next
-    right: -50px
+  margin-bottom: 45px
+  .title
+    letter-spacing: 0
+  &__text
+    margin-top: 25px
+//qualification END
+
+// methods
+.f-methods
+  padding: 60px 0
   &__wrapper
-    position: absolute
-    top: 50%
-    width: 100%
+    background: #F8F9F9
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25)
+    border-radius: 3px
+    margin-bottom: 30px
+    padding: 50px 30px 60px 30px
+  &__title
+    font-size: 25px
+    line-height: 22px
+    font-family: $bold
+    color: #333
+    margin-bottom: 18px
+    span
+      font-family: $regular
+  &__description
+    margin-bottom: 22px
+  &__list
+    span
+      font-family: $bold
+    &_plus
+      background-image: url("data:image/svg+xml,%3Csvg width='27' height='27' viewBox='0 0 27 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.144 0.707031V26.9951M0 13.8511L26.2881 13.8511' stroke='%23006298' stroke-width='5'/%3E%3C/svg%3E")
+      span
+        color: #006298
+    &_minus
+      background-image: url("data:image/svg+xml,%3Csvg width='27' height='6' viewBox='0 0 27 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 2.94531L26.2881 2.94531' stroke='%23A5A6A6' stroke-width='5'/%3E%3C/svg%3E%0A")
+      background-position: left 13px
+      span
+        color: #A5A6A6
+    &_title
+      font-size: 25px
+      line-height: 22px
+      font-family: $bold
+      margin-bottom: 20px
+    &_item
+      margin-bottom: 30px
+      padding-left: 60px
+      background-repeat: no-repeat
+
+
+
+
+
+
+
+// methods END

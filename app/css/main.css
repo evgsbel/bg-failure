@@ -335,29 +335,28 @@ p {
     padding-left: 15px;
     padding-right: 15px;
     font-size: 18px; }
-
-.form-group input {
-  height: 52px;
-  border-radius: 3px;
-  border: 2px solid #fff;
-  background-color: transparent; }
-  .form-group input:focus {
+  .f-feedback__input {
+    height: 52px;
+    border-radius: 3px;
+    border: 2px solid #fff;
     background-color: transparent; }
-  .form-group input::-webkit-input-placeholder {
-    color: #fff;
-    font-family: "Webnar-bold"; }
-  .form-group input::-moz-placeholder {
-    color: #fff;
-    font-family: "Webnar-bold"; }
-  .form-group input:-ms-input-placeholder {
-    color: #fff;
-    font-family: "Webnar-bold"; }
-  .form-group input::-ms-input-placeholder {
-    color: #fff;
-    font-family: "Webnar-bold"; }
-  .form-group input::placeholder {
-    color: #fff;
-    font-family: "Webnar-bold"; }
+    .f-feedback__input:focus {
+      background-color: transparent; }
+    .f-feedback__input::-webkit-input-placeholder {
+      color: #fff;
+      font-family: "Webnar-bold"; }
+    .f-feedback__input::-moz-placeholder {
+      color: #fff;
+      font-family: "Webnar-bold"; }
+    .f-feedback__input:-ms-input-placeholder {
+      color: #fff;
+      font-family: "Webnar-bold"; }
+    .f-feedback__input::-ms-input-placeholder {
+      color: #fff;
+      font-family: "Webnar-bold"; }
+    .f-feedback__input::placeholder {
+      color: #fff;
+      font-family: "Webnar-bold"; }
 
 .confidencial {
   text-align: center;

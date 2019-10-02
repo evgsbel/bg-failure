@@ -1,98 +1,160 @@
-@font-face {
-  font-family: "Webnar-regular";
-  src: url("../fonts/WEBNAR-REGULAR.OTF"), url("../fonts/Webnar-Regular.ttf"), url("../fonts/Webnar-Regular.eot"), url("../fonts/Webnar-Regular.woff"), url("../fonts/Webnar-Regular.svg"); }
+.blur_grey {
+  background: url("../img/blur-grey.png") no-repeat center -100px #D0D0D0; }
 
-@font-face {
-  font-family: "Webnar-italic";
-  font-style: italic;
-  src: url("../fonts/WEBNAR-REGULARITALIC.OTF"), url("../fonts/Webnar-RegularItalic.ttf"), url("../fonts/Webnar-RegularItalic.eot"), url("../fonts/Webnar-RegularItalic.woff"), url("../fonts/Webnar-RegularItalic.svg"); }
+.color_white {
+  color: #fff; }
 
-@font-face {
-  font-family: "Webnar-bold";
-  font-weight: bold;
-  src: url("../fonts/WEBNAR-BOLD.OTF"), url("../fonts/Webnar-Bold.ttf"), url("../fonts/Webnar-Bold.eot"), url("../fonts/Webnar-Bold.woff"), url("../fonts/Webnar-Bold.svg"); }
+.title_margin {
+  margin-bottom: 50px; }
 
-@font-face {
-  font-family: "Webnar-bold_italic";
-  font-weight: bold;
-  font-style: italic;
-  src: url("../fonts/WEBNAR-BOLDITALIC.OTF"), url("../fonts/Webnar-BoldItalic.ttf"), url("../fonts/Webnar-BoldItalic.eot"), url("../fonts/Webnar-BoldItalic.woff"), url("../fonts/Webnar-BoldItalic.svg"); }
+.f-cost {
+  padding: 60px 0; }
+  .f-cost .title {
+    margin-bottom: 45px; }
+  .f-cost__item {
+    margin-bottom: 30px; }
+  .f-cost__input, .f-cost__select {
+    border: 2px solid #4F4F4F;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #333;
+    height: 52px;
+    line-height: 22px;
+    background-color: transparent; }
+    .f-cost__input:focus, .f-cost__select:focus {
+      border: 2px solid #036194;
+      background-color: transparent;
+      color: #333;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      -webkit-box-shadow: 1px 1px 1px 1px rgba(79, 79, 79, 0.25);
+              box-shadow: 1px 1px 1px 1px rgba(79, 79, 79, 0.25); }
+    .f-cost__input::-webkit-input-placeholder, .f-cost__select::-webkit-input-placeholder {
+      color: #333; }
+    .f-cost__input::-moz-placeholder, .f-cost__select::-moz-placeholder {
+      color: #333; }
+    .f-cost__input:-ms-input-placeholder, .f-cost__select:-ms-input-placeholder {
+      color: #333; }
+    .f-cost__input::-ms-input-placeholder, .f-cost__select::-ms-input-placeholder {
+      color: #333; }
+    .f-cost__input::placeholder, .f-cost__select::placeholder {
+      color: #333; }
+  .f-cost__select {
+    background: url("data:image/svg+xml,%3Csvg width='14' height='9' viewBox='0 0 14 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.47266 1.84863L6.80469 7.17871L12.1348 1.84863' stroke='%234F4F4F' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat 95% center;
+    -webkit-transition: background .3s;
+    -o-transition: background .3s;
+    transition: background .3s; }
+    .f-cost__select:focus, .f-cost__select:active {
+      background: url("data:image/svg+xml,%3Csvg width='14' height='9' viewBox='0 0 14 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.0078 7.17871L6.67578 1.84863L1.3457 7.17871' stroke='%234F4F4F' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat 95% center; }
+  .f-cost__submit {
+    height: 52px;
+    font-family: "Webnar-bold";
+    font-size: 18px;
+    line-height: 22px;
+    color: #2f2f2f;
+    -webkit-transition: background-color color .3s ease-in-out;
+    -o-transition: background-color color .3s ease-in-out;
+    transition: background-color color .3s ease-in-out; }
+    .f-cost__submit:hover {
+      background-color: #036194;
+      color: #fff; }
+  .f-cost__item_btn {
+    margin: 0 auto; }
+  .f-cost__confidecial {
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    color: #333;
+    margin-top: 30px; }
+    .f-cost__confidecial span {
+      font-family: "Webnar-bold"; }
+    .f-cost__confidecial a {
+      text-decoration: underline;
+      color: #333; }
 
-@font-face {
-  font-family: "Webnar-thin";
-  font-weight: 100;
-  src: url("../fonts/WEBNAR-THIN.OTF"), url("../fonts/Webnar-Thin.ttf"), url("../fonts/Webnar-Thin.eot"), url("../fonts/Webnar-Thin.woff"), url("../fonts/Webnar-Thin.svg"); }
+.f-scheme {
+  padding: 60px 0; }
+  .f-scheme .title {
+    margin-bottom: 50px; }
+  .f-scheme__item {
+    background: #F8F9F9;
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    margin-bottom: 30px; }
+  .f-scheme__top {
+    background: #EEEEEE;
+    color: #006298;
+    font-family: "Webnar-bold";
+    padding: 15px 0;
+    height: 60px; }
+  .f-scheme__bottom {
+    color: #464646;
+    padding: 10px 15px 35px 15px;
+    height: 105px;
+    text-align: center; }
 
-body {
-  color: #464646;
-  letter-spacing: 0.05em;
-  font-size: 16px;
-  font-family: "Webnar-regular"; }
+.blue-hand {
+  color: #fff;
+  padding: 30px 0;
+  margin: 45px 0; }
+  .blue-hand__text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .blue-hand__text_bold {
+      font-family: "Webnar-bold";
+      font-size: 20px;
+      line-height: 30px; }
 
-b, .bold {
-  font-family: "Webnar-bold"; }
+.f-qualification {
+  padding: 60px 0;
+  background: #006198;
+  text-align: center;
+  margin-bottom: 45px; }
+  .f-qualification .title {
+    letter-spacing: 0; }
+  .f-qualification__text {
+    margin-top: 25px; }
 
-.n-wr {
-  white-space: nowrap; }
-
-ul, ol {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-
-img {
-  max-width: 100%; }
-
-p {
-  margin: 0; }
-
-.container {
-  width: 1160px; }
-
-.t-center {
-  text-align: center; }
-
-.hide-svg {
-  display: none; }
-
-.blur {
-  background: url(../img/blur.png) no-repeat top center #006198; }
-
-.title {
-  color: #036194;
-  font-size: 35px;
-  line-height: 42px;
-  margin-bottom: 22px; }
-
-.slider-arrow {
-  width: 47px;
-  height: 47px;
-  background: #FFFFFF;
-  border: 2px solid #006298;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 50%;
-  -webkit-transition: background-color 0.3s ease-in-out;
-  -o-transition: background-color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out;
-  position: absolute; }
-  .slider-arrow:focus {
-    outline: none;
-    border: 2px solid #006298; }
-  .slider-arrow svg {
-    stroke: #006298;
-    -webkit-transition: color 0.3s ease-in-out;
-    -o-transition: color 0.3s ease-in-out;
-    transition: color 0.3s ease-in-out; }
-  .slider-arrow:hover {
-    background-color: #006298; }
-  .slider-arrow:hover svg {
-    stroke: #fff; }
-  .slider-arrow_prev {
-    left: -50px; }
-  .slider-arrow_next {
-    right: -50px; }
-  .slider-arrow__wrapper {
-    position: absolute;
-    top: 50%;
-    width: 100%; }
+.f-methods {
+  padding: 60px 0; }
+  .f-methods__wrapper {
+    background: #F8F9F9;
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    margin-bottom: 30px;
+    padding: 50px 30px 60px 30px; }
+  .f-methods__title {
+    font-size: 25px;
+    line-height: 22px;
+    font-family: "Webnar-bold";
+    color: #333;
+    margin-bottom: 18px; }
+    .f-methods__title span {
+      font-family: "Webnar-regular"; }
+  .f-methods__description {
+    margin-bottom: 22px; }
+  .f-methods__list span {
+    font-family: "Webnar-bold"; }
+  .f-methods__list_plus {
+    background-image: url("data:image/svg+xml,%3Csvg width='27' height='27' viewBox='0 0 27 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.144 0.707031V26.9951M0 13.8511L26.2881 13.8511' stroke='%23006298' stroke-width='5'/%3E%3C/svg%3E"); }
+    .f-methods__list_plus span {
+      color: #006298; }
+  .f-methods__list_minus {
+    background-image: url("data:image/svg+xml,%3Csvg width='27' height='6' viewBox='0 0 27 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 2.94531L26.2881 2.94531' stroke='%23A5A6A6' stroke-width='5'/%3E%3C/svg%3E%0A");
+    background-position: left 13px; }
+    .f-methods__list_minus span {
+      color: #A5A6A6; }
+  .f-methods__list_title {
+    font-size: 25px;
+    line-height: 22px;
+    font-family: "Webnar-bold";
+    margin-bottom: 20px; }
+  .f-methods__list_item {
+    margin-bottom: 30px;
+    padding-left: 60px;
+    background-repeat: no-repeat; }
