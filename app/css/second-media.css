@@ -1,0 +1,15 @@
+@media (max-width: 1199.98px) {
+  .blur, .blur_grey, .f-footer {
+    background-size: cover; }
+  .f-case, .f-reviews {
+    display: none; } }
+
+@media (max-width: 991.98px) {
+  .container {
+    max-width: 100%; }
+  .f-qualification__item {
+    margin-top: 20px; } }
+
+@media (max-width: 575.98px) {
+  .f-cost__input, .f-cost__select {
+    font-size: 17px; } }
