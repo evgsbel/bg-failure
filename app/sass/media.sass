@@ -16,15 +16,26 @@
     left: 0
   .slider-arrow_next
     right: 0
-@media (max-width: 480px)
-  .f-contact__nav-link
-    margin-bottom: 15px
-  .f-notdo__item
-    margin-bottom: 15px
-  .f-footer, .f-feedback, .f-type__hand
-    background: #006198
-  .f-footer-nav
-    margin-bottom: 20px
+@media (max-width: 768px)
+  .h-footer__item
+    text-align: left
+  .h-footer__title
+    max-width: 60%
+    &:before
+      top: 5px
+      transform: rotate(-90deg)
+    &:after
+      content: none
+  .h-footer__inner
+    top: 0
+    left: auto
+    right: 0
+    max-width: 60%
+    max-height: 80%
+    li
+      width: 100%
+  .h-footer__copy
+    margin-top: 30px
 @media (max-width: 575.98px)
   .f-type__hand_img
     display: none
@@ -45,3 +56,16 @@
     border: 0
   .f-footer__copy
     margin-top: 0
+  .h-footer__inner
+    display: none
+  .h-footer__title:before
+    content: none
+@media (max-width: 480px)
+  .f-contact__nav-link
+    margin-bottom: 15px
+  .f-notdo__item
+    margin-bottom: 15px
+  .f-footer, .f-feedback, .f-type__hand
+    background: #006198
+  .f-footer-nav
+    margin-bottom: 20px
